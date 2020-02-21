@@ -1,5 +1,7 @@
-# Welcome to GitHub Desktop!
-
-This is your README. READMEs are where you can communicate what your project is and how to use it.
-
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+最近翻新了之前写的音乐播放器
+增加了一些功能:
+  1.能够自主删除歌曲
+  2.进度条可以拖动
+未完成功能:
+  1.自选主题(老版本可以自选,新版本还未实现)
+  2.添加音乐
