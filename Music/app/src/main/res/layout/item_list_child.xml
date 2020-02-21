@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listChildLayout"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp">
+
+    <TextView
+        android:text="@string/music_name"
+        android:maxLines="1"
+        android:maxEms="10"
+        android:ellipsize="end"
+        android:textSize="17sp"
+        android:id="@+id/itemNameText"
+        android:layout_toEndOf="@+id/itemChecked"
+        android:layout_toRightOf="@+id/itemChecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="@string/music_author"
+        android:maxLines="1"
+        android:maxEms="10"
+        android:ellipsize="end"
+        android:textSize="13sp"
+        android:layout_toEndOf="@+id/itemChecked"
+        android:layout_toRightOf="@+id/itemChecked"
+        android:layout_below="@id/itemNameText"
+        android:id="@+id/itemAuthorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="13sp"
+        android:gravity="end"
+        android:text="@string/music_time"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/itemAuthorText"
+        android:layout_toRightOf="@+id/itemAuthorText"
+        android:layout_centerVertical="true"
+        android:id="@+id/itemTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/itemChecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

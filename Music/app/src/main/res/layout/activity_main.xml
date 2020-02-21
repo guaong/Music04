@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    tools:context=".activity.MainActivity">
+
+    <guaong.music.components.WaterWaveView
+        android:id="@+id/waterWaveView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageButton
+        android:id="@+id/settingsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/settings"
+        android:background="@drawable/settings"
+        android:contentDescription="@string/settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/musicInfoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toTopOf="@+id/listBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsBtn">
+
+        <Button
+            android:id="@+id/timingBtn"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/timing_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <guaong.music.components.MarqueeTextView
+            android:textColor="#fff"
+            android:id="@+id/musicNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/timingBtn"
+            android:ellipsize="marquee"
+            android:text="@string/music_name"
+            android:textSize="32sp" />
+
+        <guaong.music.components.MarqueeTextView
+            android:textColor="#fff"
+            android:id="@+id/musicAuthorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/musicNameText"
+            android:layout_centerHorizontal="true"
+            android:text="@string/music_author"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/playOrderBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/musicAuthorText"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/loop"
+            android:contentDescription="@string/play_order" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:background="@drawable/musiclist"
+        android:id="@+id/listBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/list"
+        android:contentDescription="@string/list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
