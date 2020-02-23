@@ -5,3 +5,6 @@
 未完成功能:<br>
   1.自选主题(老版本可以自选,新版本还未实现)<br>
   2.添加音乐<br>
+![P1](/README_IMG/01.png)<br>
+![P1](/README_IMG/02.png)<br>
+![P1](/README_IMG/03.png)<br>
